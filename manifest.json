@@ -1,0 +1,27 @@
+{
+  "name": "Test extension",
+  "description": "test!",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "background": {
+      "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "action": {
+      "default_popup": "popup.html"
+  },
+
+  "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabs"
+  ]
+}
