@@ -10,6 +10,7 @@ chrome.runtime.onMessage.addListener(
                 // manually locating (as it doesn't have an ID) it by JSpath
                 let boton = document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(9) > div.crqnQb > div.rG0ybd.xPh1xb.P9KVBf.LCXT6 > div.TqwH9c > div.SZfyod > div > div > div:nth-child(2) > span > button");
                 
+                
                 if (boton.ariaPressed === "false") {
                     boton.click();
 
