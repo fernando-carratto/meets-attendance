@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(
                 // sending message to active tab. content.js catches it
                 // we send another message because popup, as far as i'm
                 // concerned, can't communicate with content. 
-                chrome.tabs.sendMessage(tabs[0].id, {message: "toContent"});
+                chrome.tabs.sendMessage(tabs[0].id, {message: "testButtonPressed"});
             });
         }
     }
